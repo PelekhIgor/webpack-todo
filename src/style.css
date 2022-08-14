@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.list-container {
+  width: 50%;
+  min-width: 250px;
+  max-width: 590px;
+  height: 500px;
+  padding: 10px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 2px solid darkgray;
+}
+
+.item {
+  width: 220px;
+  height: 80px;
+  display: flex;
+  border: 2px solid darkgray;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: lightyellow;
+}
+
+.edit-container {
+  width: 400px;
+  height: 300px;
+  border: 2px solid green;
+  margin-left: 50px;
+}
+.body{
+  width: 100%;
+  display: flex;
+}
+.item_action{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.item_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.complete_btn{
+  display: block;
+  background-color: darkgray;
+  color: white;
+  padding: 5px 15px ;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+.complete_btn:hover{
+  background-color: lightgray;
+}
+.close {
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0, 0, 1, -0.92);
+}
+.close:hover{
+  transform: translatey(-20%) scale(1.5);
+}
+.todo-complete{
+  background-color: lightgreen;
+}
+.item-active{
+  border: 2px solid orange;
+}
+.show-edit{
+  display: flex;
+}
+.hide-element{
+  display: none;
+
+}
+
+.create{
+  padding-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+input{
+  width: 230px;
+  height: 35px;
+  border: 1px solid darkgrey;
+  border-radius: 2px;
+  font-size: 20px;
+  color: black;
+  margin-right: 15px;
+
+}
+.create_btn{
+  background-color: darkgray;
+  color: white;
+  padding: 5px 20px ;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+.create_btn:hover{
+  background-color: lightgray;
+}
